@@ -4,6 +4,37 @@ export const NAV_ITEMS = [
   { href: "/watchlist", label: "Watchlist" },
 ];
 
+export const INVESTMENT_GOALS = [
+    { value: 'Growth', label: 'Growth' },
+    { value: 'Income', label: 'Income' },
+    { value: 'Balanced', label: 'Balanced' },
+    { value: 'Conservative', label: 'Conservative' },
+];
+
+export const RISK_TOLERANCE_OPTIONS = [
+    { value: 'Low', label: 'Low' },
+    { value: 'Medium', label: 'Medium' },
+    { value: 'High', label: 'High' },
+];
+
+export const PREFERRED_INDUSTRIES = [
+    { value: 'Technology', label: 'Technology' },
+    { value: 'Healthcare', label: 'Healthcare' },
+    { value: 'Finance', label: 'Finance' },
+    { value: 'Energy', label: 'Energy' },
+    { value: 'Consumer Goods', label: 'Consumer Goods' },
+];
+
+export const ALERT_TYPE_OPTIONS = [
+    { value: 'upper', label: 'Upper' },
+    { value: 'lower', label: 'Lower' },
+];
+
+export const CONDITION_OPTIONS = [
+    { value: 'greater', label: 'Greater than (>)' },
+    { value: 'less', label: 'Less than (<)' },
+];
+
 export const MARKET_OVERVIEW_WIDGET_CONFIG = {
   colorTheme: "dark", // dark mode
   dateRange: "12M", // last 12 months
@@ -131,7 +162,7 @@ export const MARKET_DATA_WIDGET_CONFIG = {
                 { name: 'NASDAQ:AAPL', displayName: 'Apple' },
                 { name: 'NASDAQ:GOOGL', displayName: 'Alphabet' },
                 { name: 'NASDAQ:MSFT', displayName: 'Microsoft' },
-                { name: 'NASDAQ:FB', displayName: 'Meta Platforms' },
+                { name: 'NASDAQ:META', displayName: 'Meta Platforms' },
                 { name: 'NYSE:ORCL', displayName: 'Oracle Corp' },
                 { name: 'NASDAQ:INTC', displayName: 'Intel Corp' },
             ],
