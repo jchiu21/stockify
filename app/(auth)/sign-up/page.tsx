@@ -57,12 +57,13 @@ const SignUp = () => {
           name="email"
           label="Email"
           placeholder="johndoe@gmail.com"
+          type="email"
           register={register}
           error={errors.email}
           validation={{
             required: "Email is required",
             pattern: /^\w+@\w+\.\w+$/,
-            message: "Email address is required",
+            message: "Enter a valid email address",
           }}
         />
 
@@ -76,7 +77,7 @@ const SignUp = () => {
           validation={{ required: "Password is required", minLength: 8 }}
         />
 
-        <CountrySelectField 
+        <CountrySelectField
           name="Country"
           label="Country"
           control={control}
@@ -122,7 +123,11 @@ const SignUp = () => {
           {isSubmitting ? "Creating Account" : "Start Your Investing Journey"}
         </Button>
 
-        <FooterLink text="Already have an account?" linkText="Sign in" href="/sign-in" />
+        <FooterLink
+          text="Already have an account?"
+          linkText="Sign in"
+          href="/sign-in"
+        />
       </form>
     </>
   );
